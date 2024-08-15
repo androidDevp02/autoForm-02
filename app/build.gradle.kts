@@ -49,4 +49,11 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    //glide for rounded image
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
+
+
+
 }

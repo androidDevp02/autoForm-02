@@ -30,7 +30,7 @@
 
 
     <LinearLayout
-        android:id="@+id/line"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/subHeading"
@@ -90,7 +90,7 @@
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_login"
+        android:id="@+id/continue_btn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:backgroundTint="#3F51B5"
