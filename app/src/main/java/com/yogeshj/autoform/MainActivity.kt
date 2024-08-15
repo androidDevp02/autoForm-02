@@ -17,5 +17,6 @@ class MainActivity : AppCompatActivity() {
         binding=ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         startActivity(Intent(this@MainActivity,LoginActivity::class.java))
+        finish()
     }
 }
