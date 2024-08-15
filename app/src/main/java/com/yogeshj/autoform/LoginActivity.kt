@@ -20,7 +20,6 @@ class LoginActivity : AppCompatActivity() {
         }
         binding.btnLogin.setOnClickListener {
             startActivity(Intent(this@LoginActivity,FieldSelectActivity::class.java))
-            finish()
         }
     }
 }
