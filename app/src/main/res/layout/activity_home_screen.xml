@@ -71,6 +71,48 @@
         app:layout_constraintTop_toBottomOf="@id/profile_pic" />
 
 
+    <ImageView
+        android:id="@+id/notice_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/notification_icon"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recommendation"
+        app:layout_constraintTop_toBottomOf="@id/notice_img"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Recommendation"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/recommendation_see_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/notice_img"
+        android:text="See All"
+        android:textColor="#037BF3"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_recommendation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recommendation"
+        app:layout_goneMarginTop="15dp"
+        tools:listitem="@layout/recommendation_rv_items" />
+
 
 
 

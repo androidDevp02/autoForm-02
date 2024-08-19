@@ -29,9 +29,7 @@ class FieldSelectActivity : AppCompatActivity() {
             startActivity(Intent(this@FieldSelectActivity,ProfileInfoActivity::class.java))
             finish()
         }
-
     }
-
     private fun isCheck(id: CheckBox) {
         id.setOnCheckedChangeListener { _, isChecked ->
             if(isChecked) {
