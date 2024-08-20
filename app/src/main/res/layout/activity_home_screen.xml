@@ -20,7 +20,20 @@
         android:src="@mipmap/ic_launcher"
         android:scaleType="centerCrop"
         />
+    <Button
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/menu"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher"
+        android:text="Menu"
+        >
 
+    </Button>>
     <TextView
         android:layout_marginStart="12dp"
         android:id="@+id/good_morning_text"
@@ -106,14 +119,13 @@
         android:id="@+id/recycler_recommendation"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/recommendation"
         app:layout_goneMarginTop="15dp"
         tools:listitem="@layout/recommendation_rv_items" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

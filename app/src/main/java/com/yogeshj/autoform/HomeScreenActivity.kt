@@ -1,5 +1,6 @@
 package com.yogeshj.autoform
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -24,5 +25,9 @@ class HomeScreenActivity : AppCompatActivity() {
             .load(R.drawable.notification_icon)
             .apply(RequestOptions.circleCropTransform())
             .into(binding.notification)
+
+        binding.menu.setOnClickListener{
+            startActivity(Intent(this@HomeScreenActivity,UpdateProfileActivity::class.java))
+        }
     }
 }
